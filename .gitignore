@@ -1,0 +1,45 @@
+# Raw data — never commit to GitHub
+*.csv
+*.parquet
+*.json
+data/
+
+# Power BI files — large binary, use screenshots instead
+*.pbix
+*.pbit
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+.venv/
+venv/
+env/
+
+# AWS credentials — NEVER commit
+.aws/
+credentials
+*.pem
+*.key
+
+# Terraform state
+*.tfstate
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Great Expectations local store
+great_expectations/uncommitted/
